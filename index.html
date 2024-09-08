@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design for mobile devices -->
+
+    <!-- Link to external CSS stylesheets -->
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Main styles -->
+    <link rel="stylesheet" href="styles/loginAnimation.css"> <!-- Animation styles -->
+    <link rel="stylesheet" href="styles/phone.css"> <!-- Mobile-specific styles -->
+
+    <title>Login Page</title> <!-- Title of the webpage -->
+</head>
+<body>
+    <div class="container"> <!-- Main container for form and image -->
+        <div class="login-form"> <!-- Section for the login form -->
+            <img src="logo.png" alt="Logo" class="logo"> <!-- Logo displayed first -->
+            <div class="enroll-now"> <!-- Section for new customer enrollment -->
+                <p>Are you a new customer?</p> <!-- Prompt for new customers -->
+                <button class="enroll-button">Enroll Now</button> <!-- Button for enrollment -->
+                <div class="dropdown"> <!-- Dropdown for additional information -->
+                    <ul>
+                        <li><span class="check-icon"></span> Access your loans online</li> <!-- Loan access information -->
+                        <li><span class="check-icon"></span> Pay your mortgage online</li> <!-- Mortgage payment information -->
+                        <li><span class="check-icon"></span> View your mortgage statements</li> <!-- Statement viewing information -->
+                    </ul>
+                </div>
+            </div>
+            <h2>Welcome Back</h2> <!-- Welcome message for returning users -->
+            <form> <!-- Form for user input -->
+                <input type="text" placeholder="Online ID" required> <!-- Input for Online ID -->
+                <input type="password" placeholder="Password" required> <!-- Input for password -->
+                <div class="remember-me"> <!-- Section for remembering login details -->
+                    <input type="checkbox" id="remember"> <!-- Checkbox for "Remember Me" -->
+                    <label for="remember">Remember me</label> <!-- Label for checkbox -->
+                </div>
+                <button type="submit" onclick="animateTransition()">Login</button> <!-- Login button with transition function -->
+                <div class="links"> <!-- Section for password recovery links -->
+                    <a href="#">Forgot Online ID?</a> <!-- Link to recover Online ID -->
+                    <a href="#">Forgot Password?</a> <!-- Link to recover password -->
+                </div>
+            </form>
+        </div>
+        <div class="image-section"> <!-- Section to display an image -->
+            <img src="house.jpg" alt="House"> <!-- Image displayed beside the form -->
+        </div>
+    </div>
+
+    <div class="footer-container"> <!-- Footer section -->
+        <footer> <!-- Footer element -->
+            <p>© 2024 Regions Financial Corporation - Member FDIC | Equal Housing Lender</p> <!-- Copyright notice -->
+        </footer>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to the external JavaScript file -->
+</body>
+</html>

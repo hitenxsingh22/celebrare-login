@@ -1,0 +1,106 @@
+/* Phone Styles */
+@media (max-width: 768px) {
+    body {
+        background-color: #f2f2f2; /* Keeping the body background */
+        overflow: scroll; /* Prevent overflow */
+    }
+
+    .container {
+        display: flex; /* Keep flex display */
+        flex-direction: column; /* Stack children vertically */
+        height: 100vh; /* Full height of viewport */
+    }
+
+    .login-form {
+        flex: 1 0 50%; /* Take the upper half of the container */
+        padding: 20px; /* Adjust padding for small screens */
+        display: flex;  
+        flex-direction: column; /* Ensure elements stack vertically */
+        justify-content: center; /* Center the content */
+    }
+
+    .image-section {
+        flex: 1; /* Take the lower half of the container */
+        display: flex; 
+        justify-content: center; /* Center the image */
+        align-items: center; /* Center the image */
+    }
+
+    .image-section img {
+        width: 100%; /* Full width of the section */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Cover the section without distorting */
+    }
+
+    /* Form Section */
+    form {
+        width: 100%; /* Take full width */
+        display: flex; 
+        flex-direction: column; /* Elements in a column */
+        align-items: center; /* Center elements */
+        opacity: 1; /* Ensure visibility */
+    }
+
+    input {
+        width: 90%; /* Input width */
+        padding: 12px; /* Consistent padding */
+        margin-bottom: 15px; /* Space between elements */
+    }
+
+    button {
+        width: 90%; /* Full width button */
+        padding: 12px; /* Consistent padding */
+        font-size: 1rem; /* Readable font size */
+    }
+
+    .links {
+        display: flex; /* Keep flex display */
+        flex-direction: column; /* Stack links vertically */
+        
+        margin-top: 10px; /* Add space between other elements */
+        width: 100%; /* Optional: Full width */
+    }
+
+    .links a {
+        margin: -1rem 0; /* Space between links */
+        color: #4CAF50; /* Link color */
+        text-decoration: none; /* Remove underline */
+        font-size: 0.7rem; /* Font size for links */
+        text-align: center; /* Center text */
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Reduce size for mobile */
+        margin-top: 7rem ; /* Margin above and below */
+        text-align: center; /* Center text */
+    }
+
+    .enroll-now {
+        position: absolute; /* Reset positioning */
+        margin-top: 1rem; /* Add space */
+        opacity: 1; /* Ensure it's visible */
+        display: flex;
+        flex-direction: column;
+        margin-right: 0.1em;
+        padding: 0.1em;
+        right: 0.6rem;
+        margin-bottom: 20px;
+        margin-top: 0.8rem;
+        
+    }
+
+    .enroll-now p{
+       position: relative;
+       margin-bottom: 0;    }
+
+       .enroll-button{
+        margin-top: 0.5rem;
+       }
+
+    .footer-container {
+        width: 100%; /* Footer full width */
+        position: relative; /* Keep it in normal flow */
+        padding: 10px; /* Padding for footer contents */
+        text-align: center; /* Center footer text */
+    }
+}
